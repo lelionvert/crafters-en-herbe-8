@@ -9,7 +9,7 @@ Les tests d’acceptances permettent de faciliter les échanges en explicitant d
 
 Au cours du meet-up nous ferons 3 éditions le code correspondant à chacune de ces itérations est dans une branche spécifique du projet.
 
-Une fois le projet lancé une interface d'utilisation est accessible: [http://localhost:8080/swagger-ui.html#/](http://localhost:8080/swagger-ui.html#/)
+Une fois le projet lancé une interface d'utilisation des l'API est accessible en local: [http://localhost:8080/swagger-ui.html#/](http://localhost:8080/swagger-ui.html#/)
 
 - [Première itération: Le besoin métier](#Première-itération:-Le-besoin-métier)
 - [Deuxième itération: Écriture du test d'acceptance](#Deuxième-itération:-Écriture-du-test-d'acceptance)
