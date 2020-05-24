@@ -1,13 +1,13 @@
-package com.lcdlv.carfterenherbe;
+package com.lcdlv.crafterenherbe;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CarfterEnHerbeApplication {
+public class CrafterEnHerbeApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CarfterEnHerbeApplication.class, args);
+		SpringApplication.run(CrafterEnHerbeApplication.class, args);
 	}
 
 }
