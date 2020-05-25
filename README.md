@@ -1,7 +1,7 @@
 # crafters-en-herbe-8
 ##### Bienvenue sur le support de la 8ème édition de crafters en herbe.
 
-## A la découverte du BBD
+## A la découverte du BDD
 
 Au sein d’une équipe, il est important qu’il y ait une bonne communication.
 
