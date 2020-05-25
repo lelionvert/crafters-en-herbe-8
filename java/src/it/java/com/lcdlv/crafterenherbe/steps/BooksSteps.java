@@ -9,7 +9,9 @@ import io.cucumber.datatable.DataTable;
 import io.cucumber.java.Before;
 import io.cucumber.java8.En;
 import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.HttpStatus;
 import org.springframework.mock.web.MockHttpServletResponse;
@@ -28,25 +30,19 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 
 @ContextConfiguration(classes = {CucumberConfiguration.class})
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, classes = {CrafterEnHerbeApplication.class})
-//@WebMvcTest(BookController.class)
-@WebAppConfiguration
-
 public class BooksSteps implements En {
-    private MockMvc mockMvc;
     private MockHttpServletResponse response;
     private static final String BOOKS_END_POINT = "/books";
 
     @Autowired
     private WebApplicationContext context;
-
-    @Before
-    void setUp() {
-         mockMvc =  MockMvcBuilders.webAppContextSetup(this.context).build();
-    }
+    private MockMvc mockMvc;
 
     public BooksSteps() {
+        Before(() -> {
+            mockMvc = MockMvcBuilders.webAppContextSetup(this.context).build();
+        });
         When("^client want to see all books available$", () -> {
-
             response = mockMvc.perform(MockMvcRequestBuilders.get(BOOKS_END_POINT))
                     .andDo(print())
                     .andReturn()

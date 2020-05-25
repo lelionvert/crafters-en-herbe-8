@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.lcdlv.crafterenherbe.*"})
+//@ComponentScan(basePackages = {"com.lcdlv.crafterenherbe"})
 @EnableJpaRepositories(basePackages = {"com.lcdlv.crafterenherbe.repository"})
 @EntityScan(basePackages = {"com.lcdlv.crafterenherbe.model"})
 public class CrafterEnHerbeApplication {
@@ -32,18 +32,18 @@ public class CrafterEnHerbeApplication {
 
     }
 
-//    @Bean
-//    InitializingBean initialiseBook() {
-//        return () -> {
-//            List<Book> books = new ArrayList<>();
-//            books.add(new Book(1, "The Philosopher's Stone", 8));
-//            books.add(new Book(2, "The Chamber of Secrets", 8));
-//            books.add(new Book(3, "The Prisoner of Azkaban", 9));
-//            books.add(new Book(4, "The Goblet of Fire", 13));
-//            books.add(new Book(5, "The Order of the Phoenix", 14));
-//            books.add(new Book(6, "The Half-Blood Prince", 14));
-//            books.add(new Book(7, "The Deathly Hallows", 14));
-//            bookRepository.saveAll(books);
-//        };
-//    }
+    @Bean
+    InitializingBean initializeBooks() {
+        return () -> {
+            List<Book> books = new ArrayList<>();
+            books.add(new Book(1, "The Philosopher's Stone", 10));
+            books.add(new Book(2, "The Chamber of Secrets", 10));
+            books.add(new Book(3, "The Prisoner of Azkaban", 10));
+            books.add(new Book(4, "The Goblet of Fire", 10));
+            books.add(new Book(5, "The Order of the Ph  ²oenix", 10));
+            books.add(new Book(6, "The Half-Blood Prince", 10));
+            books.add(new Book(7, "The Deathly Hallows", 10));
+            bookRepository.saveAll(books);
+        };
+    }
 }
