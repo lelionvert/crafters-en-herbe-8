@@ -32,3 +32,6 @@ build/
 
 */.mvn
 *mvnw
+
+### node modules
+/javascript/node_modules
