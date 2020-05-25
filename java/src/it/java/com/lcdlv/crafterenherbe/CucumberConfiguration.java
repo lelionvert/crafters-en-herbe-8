@@ -7,9 +7,5 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootConfiguration
-@ComponentScan(basePackages = {"repository", "model", "controller", "steps"})
-@EnableAutoConfiguration
-@EnableJpaRepositories(basePackages = {"repository"})
-@EntityScan(basePackages = {"model"})
 public class CucumberConfiguration {
 }
