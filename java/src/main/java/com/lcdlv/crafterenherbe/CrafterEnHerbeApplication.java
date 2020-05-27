@@ -22,11 +22,11 @@ public class CrafterEnHerbeApplication {
 
     private final BookRepository bookRepository;
 
-	public CrafterEnHerbeApplication(BookRepository bookRepository) {
-		this.bookRepository = bookRepository;
-	}
+    public CrafterEnHerbeApplication(BookRepository bookRepository) {
+        this.bookRepository = bookRepository;
+    }
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
         SpringApplication.run(CrafterEnHerbeApplication.class, args);
 
 
@@ -36,13 +36,13 @@ public class CrafterEnHerbeApplication {
     InitializingBean initializeBooks() {
         return () -> {
             List<Book> books = new ArrayList<>();
-            books.add(new Book(1, "The Philosopher's Stone", 10));
-            books.add(new Book(2, "The Chamber of Secrets", 10));
-            books.add(new Book(3, "The Prisoner of Azkaban", 10));
-            books.add(new Book(4, "The Goblet of Fire", 10));
-            books.add(new Book(5, "The Order of the Ph  ²oenix", 10));
-            books.add(new Book(6, "The Half-Blood Prince", 10));
-            books.add(new Book(7, "The Deathly Hallows", 10));
+            books.add(new Book(1, "The Philosopher's Stone", 10, null));
+            books.add(new Book(2, "The Chamber of Secrets", 10, null));
+            books.add(new Book(3, "The Prisoner of Azkaban", 10, null));
+            books.add(new Book(4, "The Goblet of Fire", 10, null));
+            books.add(new Book(5, "The Order of the Phoenix", 10, null));
+            books.add(new Book(6, "The Half-Blood Prince", 10, null));
+            books.add(new Book(7, "The Deathly Hallows", 10, null));
             bookRepository.saveAll(books);
         };
     }
