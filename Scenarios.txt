@@ -1,0 +1,84 @@
+Librairie en ligne
+
+Chaque livre coûte 10 €
+
+2 livres différents => 5%
+3 livres différents => 10%
+4 livres différents => 20%
+
+
+Scénarios : 
+ 1 - Aucun livre => 0€
+ 
+| name                     | Quantity |
+| The Philosopher's Stone  | 0    |
+| The Chamber of Secrets   | 0    |
+| The Prisoner of Azkaban  | 0    |
+| The Goblet of Fire       | 0    |
+| The Order of the Phoenix | 0    |
+
+ 
+ 2 - 1 Livre => 10€
+ 
+ | name                     | Quantity |
+| The Philosopher's Stone  | 0    |
+| The Chamber of Secrets   | 1    |
+| The Prisoner of Azkaban  | 0    |
+| The Goblet of Fire       | 0    |
+| The Order of the Phoenix | 0    |
+ 
+ 3 - 2 Livres identiques => 20€
+ 
+ | name                     | Quantity |
+| The Philosopher's Stone  | 0    |
+| The Chamber of Secrets   | 0    |
+| The Prisoner of Azkaban  | 2    |
+| The Goblet of Fire       | 0    |
+| The Order of the Phoenix | 0    |
+ 
+ 4 - 2 Livres différents => 19€ => 5%
+ 
+ | name                     | Quantity |
+| The Philosopher's Stone  | 1    |
+| The Chamber of Secrets   | 0    |
+| The Prisoner of Azkaban  | 0    |
+| The Goblet of Fire       | 1    |
+| The Order of the Phoenix | 0    |
+ 
+ 5 - 2 livres identiques et 1 livre différent =>  28.50€ => 5%
+ 
+ | name                     | Quantity |
+| The Philosopher's Stone  | 0    |
+| The Chamber of Secrets   | 2    |
+| The Prisoner of Azkaban  | 0    |
+| The Goblet of Fire       | 1    |
+| The Order of the Phoenix | 0    |
+ 
+ 6 - 3 livres différents => 27€ => 10%
+ 
+ | name                     | Quantity |
+| The Philosopher's Stone  | 1    |
+| The Chamber of Secrets   | 0    |
+| The Prisoner of Azkaban  | 1    |
+| The Goblet of Fire       | 1    |
+| The Order of the Phoenix | 0    |
+ 
+ 7 - 4 livres différents => 32€
+ 
+  | name                     | Quantity |
+| The Philosopher's Stone  | 1    |
+| The Chamber of Secrets   | 0    |
+| The Prisoner of Azkaban  | 1    |
+| The Goblet of Fire       | 1    |
+| The Order of the Phoenix | 1    |
+ 
+ 8 - 4 livres identiques et 2 différents => 38€
+ 
+| name                     | Quantity |
+| The Philosopher's Stone  | 2    |
+| The Chamber of Secrets   | 2    |
+| The Prisoner of Azkaban  | 2    |
+| The Goblet of Fire       | 2    |
+| The Order of the Phoenix | 0    |
+ 
+ 

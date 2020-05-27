@@ -19,7 +19,7 @@ If you buy 3 different books, you get a 10% discount.
 
 If you buy 4 different books, you get a 20% discount.
 
-Note that if you buy, say, four books, of which 3 are different titles, you get a 10% discount on the 3 that form part of a set, but the fourth book still costs 8 EUR.
+Note that if you buy, say, four books, of which 3 are different titles, you get a 10% discount on the 3 that form part of a set, but the fourth book still costs 10 EUR.
 
 Your mission is to write a piece of code to calculate the price of any conceivable shopping basket (containing only Harry Potter books), giving as big a discount as possible.
 
