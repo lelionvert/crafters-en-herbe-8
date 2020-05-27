@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -27,8 +28,7 @@ public class ShoppingCartController {
 
     @GetMapping(value = "/cart")
     public ResponseEntity<ShoppingCart> getShoppingCart() {
-        Optional<ShoppingCart> cart = shoppingCartRepository.findAll().stream().findFirst();
-        return cart.map(e -> new ResponseEntity<>(e, HttpStatus.OK))
-                .orElse(ResponseEntity.notFound().build());
+        ShoppingCart cart = shoppingCartRepository.findAll().stream().findFirst().orElse(new ShoppingCart(1, new ArrayList<>()));
+        return new ResponseEntity<>(cart, HttpStatus.OK);
     }
 }
