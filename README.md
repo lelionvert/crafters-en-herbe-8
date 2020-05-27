@@ -7,18 +7,11 @@ Au sein d’une équipe, il est important qu’il y ait une bonne communication.
 
 Les tests d’acceptances permettent de faciliter les échanges en explicitant des scénarios d’utilisations.
 
-Au cours du meet-up nous ferons 3 éditions le code correspondant à chacune de ces itérations est dans une branche spécifique du projet.
 
-Une fois le projet lancé une interface d'utilisation des l'API est accessible en local: [http://localhost:8080/swagger-ui.html#/](http://localhost:8080/swagger-ui.html#/)
-
-- [Première itération: Le besoin métier](#Première-itération:-Le-besoin-métier)
-- [Deuxième itération: Écriture du test d'acceptance](#Deuxième-itération:-Écriture-du-test-d'acceptance)
-- [Troisième itération: Implémentation](#Troisième-itération:-Implémentation)
-
-## Première itération : le besoin métier
+## Exercice
 To try and encourage more sales of the 5 different Harry Potter books they sell, a bookshop has decided to offer discounts of multiple-book purchases.
 
-One copy of any of the five books costs 8 EUR.
+One copy of any of the five books costs 10 EUR.
 
 If, however, you buy two different books, you get a 5% discount on those two books.
 
@@ -26,7 +19,6 @@ If you buy 3 different books, you get a 10% discount.
 
 If you buy 4 different books, you get a 20% discount.
 
-If you go the whole hog, and buy all 5, you get a huge 25% discount.
 Note that if you buy, say, four books, of which 3 are different titles, you get a 10% discount on the 3 that form part of a set, but the fourth book still costs 8 EUR.
 
 Your mission is to write a piece of code to calculate the price of any conceivable shopping basket (containing only Harry Potter books), giving as big a discount as possible.
@@ -43,5 +35,3 @@ For example, how much does this basket of books cost?
 
 1 copy of the fifth book
 
-## Deuxième itération: Écriture du test d'acceptance
-## Troisième itération: Implémentation
