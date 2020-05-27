@@ -1,12 +1,19 @@
 Feature: Compute a shopping cart price with discount
 
-  Scenario: No book
+  Scenario Outline: add books
     Given A shopping cart
       | name                     | Quantity |
-      | The Philosopher's Stone  | 0        |
-      | The Chamber of Secrets   | 0        |
-      | The Prisoner of Azkaban  | 0        |
-      | The Goblet of Fire       | 0        |
-      | The Order of the Phoenix | 0        |
+      | The Philosopher's Stone  | <book1>  |
+      | The Chamber of Secrets   | <book2>  |
+      | The Prisoner of Azkaban  | <book3>  |
+      | The Goblet of Fire       | <book4>  |
+      | The Order of the Phoenix | <book5>  |
     When I compute the cart price
-    Then I get 0
+    Then I get <result>
+    Examples:
+      | book1 | book2 | book3 | book4 | book5 | result |
+      | 0     | 0     | 0     | 0     | 0     | 0      |
+      | 0     | 1     | 0     | 0     | 0     | 10     |
+      | 0     | 0     | 2     | 0     | 0     | 20     |
+      | 1     | 0     | 1     | 0     | 0     | 19     |
+

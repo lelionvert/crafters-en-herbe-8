@@ -1,5 +1,4 @@
-import {computePrice} from "./compute_price";
-
+const computePrice = require("./compute_price")
 const assert = require('assert')
 
 const {Given, When, Then} = require('cucumber');
